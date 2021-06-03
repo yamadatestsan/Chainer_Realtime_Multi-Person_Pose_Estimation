@@ -32,7 +32,7 @@ if __name__ == '__main__':
     face_detector = FaceDetector("facenet", "models/facenet.npz", device=args.gpu)
     cascade = cv2.CascadeClassifier("models/haarcascade_frontalface_alt.xml")
 
-    cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture(1)
     cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
     cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
 
